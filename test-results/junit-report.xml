@@ -1,0 +1,151 @@
+<testsuites id="" name="" tests="2" failures="2" skipped="0" errors="0" time="72.92095999999997">
+<testsuite name="addingrecipient.spec.ts" timestamp="2025-02-23T14:49:28.874Z" hostname="Chrome" tests="2" failures="2" skipped="0" time="67.661" errors="0">
+<testcase name="Adding Recipient Tests › should successfully add a new recipient" classname="addingrecipient.spec.ts" time="33.829">
+<failure message="addingrecipient.spec.ts:18:7 should successfully add a new recipient" type="FAILURE">
+<![CDATA[  [Chrome] › addingrecipient.spec.ts:18:7 › Adding Recipient Tests › should successfully add a new recipient 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.waitForSelector: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('input[placeholder="Enter here"]') to be visible
+
+
+       at ../pages/loginPage.ts:19
+
+      17 |       
+      18 |       // Wait for login form to be visible
+    > 19 |       await this.page.waitForSelector('input[placeholder="Enter here"]');
+         |                       ^
+      20 |       
+      21 |       // Fill login form
+      22 |       await this.page.fill('input[placeholder="Enter here"]', email);
+        at LoginPage.login (/Users/dhruvi1234/scopex-money-tests/pages/loginPage.ts:19:23)
+        at /Users/dhruvi1234/scopex-money-tests/tests/addingrecipient.spec.ts:25:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/addingrecipient-Adding-Rec-cd7e6-ssfully-add-a-new-recipient-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/addingrecipient-Adding-Rec-cd7e6-ssfully-add-a-new-recipient-Chrome/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/addingrecipient-Adding-Rec-cd7e6-ssfully-add-a-new-recipient-Chrome/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/addingrecipient-Adding-Rec-cd7e6-ssfully-add-a-new-recipient-Chrome/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[[INFO] 2025-02-23T14:49:30.880Z - Starting login process
+]]>
+</system-out>
+<system-err>
+<![CDATA[[ERROR] 2025-02-23T14:50:00.741Z - Login failed: Error: page.waitForSelector: Test timeout of 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('input[placeholder="Enter here"]') to be visible[22m
+
+Test failed: page.waitForSelector: Test timeout of 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('input[placeholder="Enter here"]') to be visible[22m
+
+    at LoginPage.login [90m(/Users/dhruvi1234/scopex-money-tests/[39mpages/loginPage.ts:19:23[90m)[39m
+    at [90m/Users/dhruvi1234/scopex-money-tests/[39mtests/addingrecipient.spec.ts:25:23 {
+  [[32mSymbol(step)[39m]: {
+    stepId: [32m'pw:api@8'[39m,
+    location: {
+      file: [32m'/Users/dhruvi1234/scopex-money-tests/pages/loginPage.ts'[39m,
+      line: [33m19[39m,
+      column: [33m23[39m,
+      function: [32m'LoginPage.login'[39m
+    },
+    category: [32m'pw:api'[39m,
+    title: [32m'page.waitForSelector(input[placeholder="Enter here"])'[39m,
+    apiName: [32m'page.waitForSelector'[39m,
+    params: { selector: [32m'input[placeholder="Enter here"]'[39m },
+    boxedStack: [90mundefined[39m,
+    steps: [],
+    attachmentIndices: [],
+    complete: [36m[Function: complete][39m,
+    endWallTime: [33m1740322200741[39m,
+    error: {
+      message: [32m'Error: page.waitForSelector: Test timeout of 30000ms exceeded.\n'[39m +
+        [32m'Call log:\n'[39m +
+        [32m`\x1B[2m  - waiting for locator('input[placeholder="Enter here"]') to be visible\x1B[22m\n`[39m,
+      stack: [32m'Error: page.waitForSelector: Test timeout of 30000ms exceeded.\n'[39m +
+        [32m'Call log:\n'[39m +
+        [32m`\x1B[2m  - waiting for locator('input[placeholder="Enter here"]') to be visible\x1B[22m\n`[39m +
+        [32m'\n'[39m +
+        [32m'    at LoginPage.login (/Users/dhruvi1234/scopex-money-tests/pages/loginPage.ts:19:23)\n'[39m +
+        [32m'    at /Users/dhruvi1234/scopex-money-tests/tests/addingrecipient.spec.ts:25:23'[39m,
+      cause: [90mundefined[39m
+    }
+  }
+}
+
+Warning: attachment addingrecipient-Adding-Rec-cd7e6-ssfully-add-a-new-recipient-Chrome/test-failed-1.png is missing
+Warning: attachment addingrecipient-Adding-Rec-cd7e6-ssfully-add-a-new-recipient-Chrome/video.webm is missing
+Warning: attachment addingrecipient-Adding-Rec-cd7e6-ssfully-add-a-new-recipient-Chrome/trace.zip is missing]]>
+</system-err>
+</testcase>
+<testcase name="Adding Recipient Tests › should validate required fields when adding recipient" classname="addingrecipient.spec.ts" time="33.832">
+<failure message="addingrecipient.spec.ts:46:7 should validate required fields when adding recipient" type="FAILURE">
+<![CDATA[  [Chrome] › addingrecipient.spec.ts:46:7 › Adding Recipient Tests › should validate required fields when adding recipient 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.waitForSelector: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('input[placeholder="Enter here"]') to be visible
+
+
+       at ../pages/loginPage.ts:19
+
+      17 |       
+      18 |       // Wait for login form to be visible
+    > 19 |       await this.page.waitForSelector('input[placeholder="Enter here"]');
+         |                       ^
+      20 |       
+      21 |       // Fill login form
+      22 |       await this.page.fill('input[placeholder="Enter here"]', email);
+        at LoginPage.login (/Users/dhruvi1234/scopex-money-tests/pages/loginPage.ts:19:23)
+        at /Users/dhruvi1234/scopex-money-tests/tests/addingrecipient.spec.ts:50:21
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/addingrecipient-Adding-Rec-75dae-ields-when-adding-recipient-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/addingrecipient-Adding-Rec-75dae-ields-when-adding-recipient-Chrome/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/addingrecipient-Adding-Rec-75dae-ields-when-adding-recipient-Chrome/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/addingrecipient-Adding-Rec-75dae-ields-when-adding-recipient-Chrome/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[[INFO] 2025-02-23T14:50:07.059Z - Starting login process
+]]>
+</system-out>
+<system-err>
+<![CDATA[[ERROR] 2025-02-23T14:50:37.066Z - Login failed: Error: page.waitForSelector: Test timeout of 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('input[placeholder="Enter here"]') to be visible[22m
+
+
+Warning: attachment addingrecipient-Adding-Rec-75dae-ields-when-adding-recipient-Chrome/test-failed-1.png is missing
+Warning: attachment addingrecipient-Adding-Rec-75dae-ields-when-adding-recipient-Chrome/video.webm is missing
+Warning: attachment addingrecipient-Adding-Rec-75dae-ields-when-adding-recipient-Chrome/trace.zip is missing]]>
+</system-err>
+</testcase>
+</testsuite>
+</testsuites>
